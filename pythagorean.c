@@ -1,22 +1,22 @@
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
-int pow(int x,int y){
-  int power = 1;
+double pow(double x,double y){
+  double power = 1;
   for(int i=0;i<y;i++){
     power *= x;
   }
   return power;
 }
 void main(){
-  int side1,side2,side3;
-  int hyp,other;
+  double side1,side2,side3;
+  double hyp,other;
   printf("side 1 ");
-  scanf("%d",&side1);
+  scanf("%lf",&side1);
   printf("side 2 ");
-  scanf("%d",&side2);
+  scanf("%lf",&side2);
   printf("side 3 ");
-  scanf("%d",&side3);
+  scanf("%lf",&side3);
   
   if(side1>side2 && side1>side3){
     hyp = pow(side1,2);
