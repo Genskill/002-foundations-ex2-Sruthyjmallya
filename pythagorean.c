@@ -11,7 +11,7 @@ void main(){
   scanf("%d",&side3);
   
   if(side1>side2 && side1>side3){
-    if(pow(side1,2)==(pow(side2,2)+pow(side3,2))){
+    if(pow(double(side1),double(2))==(pow(double(side2),double(2))+pow(double(side3),double(2)))){
       printf("Yes");
     }
     else{
@@ -19,7 +19,7 @@ void main(){
     }
   }
   else if(side2>side3){
-    if(pow(side2,2)==(pow(side1,2)+pow(side3,2))){
+    if(pow(double(side2),double(2))==(pow(double(side1),double(2))+pow(double(side3),double(2)))){
       printf("Yes");
     }
     else{
@@ -27,7 +27,7 @@ void main(){
     }
   }
   else{
-    if(pow(side3,2)==(pow(side2,2)+pow(side1,2))){
+    if(pow(double(side3),double(2))==(pow(double(side2),double(2))+pow(double(side1),double(2)))){
       printf("Yes");
     }
     else{
