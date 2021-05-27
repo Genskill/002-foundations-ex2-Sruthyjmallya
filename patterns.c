@@ -1,27 +1,34 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<cs50.h>
 void main(){
   int pattern,row;
-  pattern = get_int("");
-  row = get_int(" ");
+  char str[30];
+  pattern = atoi(fgets(str,11,stdin));
+  row = atoi(fgets(str,11,stdin));
  if(pattern == 1){
     for(int i=row;i>0;i--){
        for(int j=0;j<i;j++){
            printf("#");
        }
-       printf("\n");
+       if(i > 1){
+        printf("\n");
+       }
    }
   }
   else if(pattern == 2){
-    for(int i=0;i<row;i++){
-       for(int j=0;j<row-i-1;j++){
-           printf(" ");
+    for(int i=row;i>0;i--){
+       for(int j=0;j<row;j++){
+           if(j<=i){
+             printf(" ");
+           }
+           else{
+             printf("#");
+           }
        }
-       for(int j=0;j<=i;j++){
-           printf("#");
+       if(i<row-1){
+          printf("\n");
        }
-       printf("\n");
+ 
    }
   }
   else{
