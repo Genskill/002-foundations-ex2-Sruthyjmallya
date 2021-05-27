@@ -11,12 +11,13 @@ double pow(double x,double y){
 void main(){
   double side1,side2,side3;
   double hyp,other;
+  char str[30];
   printf("side 1 ");
-  scanf("%lf",&side1);
+  side1 = atoi(gets(str));
   printf("side 2 ");
-  scanf("%lf",&side2);
+  side2 = atoi(gets(str));
   printf("side 3 ");
-  scanf("%lf",&side3);
+  side3 = atoi(gets(str));
   
   if(side1>side2 && side1>side3){
     hyp = pow(side1,2);
