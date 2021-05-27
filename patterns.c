@@ -9,7 +9,9 @@ void main(){
        for(int j=0;j<i;j++){
            printf("#");
        }
-       printf("\n");
+       if(i > 1){
+        printf("\n")
+       }
    }
   }
   else if(pattern == 2){
@@ -21,7 +23,9 @@ void main(){
            printf("#");
        }
        printf("\n");
-      
+       if(i<row-1){
+          printf("\n");
+       }
  
    }
   }
