@@ -2,17 +2,14 @@
 #include<stdlib.h>
 void main(){
   int pattern,row;
-  char str[30];
-  pattern = atoi(fgets(str,11,stdin));
-  row = atoi(fgets(str,11,stdin));
+  pattern = get_int("");
+  row = get_int(" ");
  if(pattern == 1){
     for(int i=row;i>0;i--){
        for(int j=0;j<i;j++){
            printf("#");
        }
-       if(i > 1){
-        printf("\n");
-       }
+       printf("\n");
    }
   }
   else if(pattern == 2){
@@ -23,10 +20,7 @@ void main(){
        for(int j=0;j<=i;j++){
            printf("#");
        }
-       if(i<row-1){
-          printf("\n");
-       }
- 
+       printf("\n");
    }
   }
   else{
