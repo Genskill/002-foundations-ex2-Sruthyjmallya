@@ -1,37 +1,36 @@
 #include<stdio.h>
-#include<stdlib.h>
-void main(){
-  int pattern,row;
-  char str[30];
-  pattern = atoi(fgets(str,11,stdin));
-  row = atoi(fgets(str,11,stdin));
- if(pattern == 1){
-    for(int i=row;i>0;i--){
-       for(int j=0;j<i;j++){
-           printf("#");
-       }
-       if(i > 1){
-        printf("\n");
-       }
-   }
-  }
-  else if(pattern == 2){
-    for(int i=row;i>0;i--){
-       for(int j=0;j<row;j++){
-           if(j<=i){
-             printf(" ");
-           }
-           else{
-             printf("#");
-           }
-       }
-       if(i<row-1){
-          printf("\n");
-       }
- 
-   }
-  }
-  else{
-    printf("Invalid Option\n");
-  }
+#include<cs50.h>
+void main()
+{
+int option,rows,i,j;
+option=get_int("");
+if(option==1)
+{
+rows=get_int("");
+for(i=rows;i>0;i--)
+{
+for(j=0;j<i;j++)
+{
+printf("#");
+}
+printf("\n");
+}
+}
+else if(option==2)
+{
+rows=get_int("");
+for(i=rows;i>0;i--)
+{
+for(j=1;j<=rows;j++)
+{
+if(j>=i)
+printf("#");
+else
+printf(" ");
+}
+printf("\n");
+}
+}
+else
+printf("Invalid entry");
 }
