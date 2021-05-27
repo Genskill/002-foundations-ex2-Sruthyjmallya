@@ -3,8 +3,8 @@
 void main()
 {
   int pattern,row,i,j;
-  pattern=get_int("");
-  row =  get_int("");
+  pattern = get_int(" ");
+  row = get_int(" ");
   if(pattern == 1){
     for(i=row;i>0;i--){
       for(j=0;j<i;j++){
@@ -13,7 +13,7 @@ void main()
       printf("\n");
     }
   }
-  else if(){
+  else if(pattern == 2){
     for(i=row;i>0;i--){
       for(j=1;j<=row;j++){
         if(j<i){
