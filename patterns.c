@@ -3,8 +3,8 @@
 void main(){
   int pattern,row;
   char str[30];
-  pattern = atoi(gets(str));
-  row = atoi(gets(str));
+  pattern = atoi(fgets(str,11,stdin));
+  row = atoi(fgets(str,11,stdin));
  if(pattern == 1){
     for(int i=row;i>0;i--){
        for(int j=0;j<i;j++){
