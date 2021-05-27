@@ -2,8 +2,9 @@
 #include<stdlib.h>
 void main(){
   int pattern,row;
-  scanf("%d",&pattern);
-  scanf("%d",&row);
+  char str[30];
+  pattern = atoi(gets(str));
+  row = atoi(gets(str));
  if(pattern == 1){
     for(int i=row;i>0;i--){
        for(int j=0;j<i;j++){
