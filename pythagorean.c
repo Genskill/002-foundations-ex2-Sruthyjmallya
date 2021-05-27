@@ -13,11 +13,11 @@ void main(){
   double hyp,other;
   char str[30];
   printf("side 1 ");
-  side1 = atoi(gets(str));
+  side1 = atoi(fgets(str,21,stdin));
   printf("side 2 ");
-  side2 = atoi(gets(str));
+  side2 = atoi(fgets(str,21,stdin));
   printf("side 3 ");
-  side3 = atoi(gets(str));
+  side3 = atoi(fgets(str,21,stdin));
   
   if(side1>side2 && side1>side3){
     hyp = pow(side1,2);
