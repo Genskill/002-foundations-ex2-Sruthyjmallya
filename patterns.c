@@ -17,7 +17,7 @@ void main(){
   }
   else if(pattern == 2){
     for(int i=0;i<row;i++){
-       for(int j=0;j<=row-i-1;j++){
+       for(int j=0;j<row-i-1;j++){
            printf(" ");
        }
        for(int j=0;j<=i;j++){
